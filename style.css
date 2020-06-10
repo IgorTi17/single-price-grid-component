@@ -1,0 +1,125 @@
+@import url('https://fonts.google.com/specimen/Karla');
+
+*{
+	margin: 0;
+ 	padding: 0;
+	font-size: 16px;
+	font-family: 'karla', sans-serif;
+}
+
+.todo{
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	max-width: 50%; 
+	box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+}
+
+.primeiro {
+	padding: 2rem;
+}
+
+.primeiro h1{
+	color: hsl(179, 62%, 43%);
+	padding-bottom: 1.5rem;
+	font-size: 1.4rem;
+}
+
+.primeiro h2{
+	color: hsl(71, 73%, 54%);
+	padding-bottom: 1rem;
+}
+
+.primeiro p{
+	color: hsl(218, 22%, 67%);
+	width: 90%;
+}
+
+.divisoria{
+	display: flex;
+}
+
+.segundo{
+	border-radius: 0px 0px 0px 8px;
+	padding: 2rem;
+	background-color: hsl(179, 62%, 43%);
+	width: 50%;
+}
+
+.segundo h1{
+	color: #ffffff;
+	font-size: 1.2rem;
+	padding-bottom: 1.5rem;
+}
+
+.segundo .valores{
+	display: flex;
+	align-items: center;
+}
+
+.segundo .valor{
+	float: left;
+	font-size: 1.7rem;
+	color: #ffffff;
+	padding-bottom: 0.6rem;
+}
+
+.segundo .RightValor{
+	color: rgb(108, 213, 216);
+	padding-left: 1rem; 
+	padding-bottom: 0.6rem;
+}
+
+.segundo p{
+	color: #ffffff;
+	padding-bottom: 1.5rem;
+}
+
+.segundo button{
+	background-color: rgb(191, 223, 50);
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+	border: 0.1px solid rgb(191, 223, 50);
+}
+
+.terceiro{
+	border-radius: 0px 0px 8px 0px;
+	padding: 2rem;
+	background-color: rgb(74, 190, 189);
+	width: 50%;
+}	
+
+.terceiro h1{
+	color: #ffffff;
+	font-size: 1.2rem;
+	padding-bottom: 1.5rem;
+}
+
+.terceiro p{
+	color: rgb(153, 233, 232);
+	font-size: 0.9rem;
+	max-width: 75%;
+	padding-bottom: 0.2rem;
+}
+
+@media screen and (max-width:375px) {
+	.todo{
+		max-width: 100%;
+	}
+	.divisoria{
+		flex-direction: column;
+	}
+	.segundo{
+		width: auto;
+		border-radius: 0;
+	}
+	.terceiro{
+		width: auto;
+		border-radius: 0px 0px 8px 8px;
+	}
+}
+
+
+
